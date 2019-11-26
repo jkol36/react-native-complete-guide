@@ -29,9 +29,9 @@ export default function App() {
         <Button title="Add" onPress={addGoalHandler}/>
       </View>
       <View> 
-        {courseGoals.map(courseGoal => {
+        {courseGoals.map((courseGoal, index) => {
           return (
-            <Text> {courseGoal}</Text>
+            <Text key={index}> {courseGoal}</Text>
           )
         })}
       </View>
